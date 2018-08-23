@@ -5,5 +5,41 @@
 			<property name="name" value="Umesh"></property>
 			<property name="age" value="30"></property>
 			<property name="email" value="112umesh.soni@gmail.com"></property>
+			<property name="books">
+				<list>
+					<ref bean="book1"/>
+					<ref bean="book2"/>
+				</list>	
+			</property>
+			<property name="oldbooks">
+				<set>
+					<ref bean="book3"/>
+					<ref bean="book4"/>
+				</set>	
+			</property>
+		</bean>
+		<bean id = "book1" class = "beans.Book">
+			<property value="1001" name="code"> </property>
+			<property value="Biggners Guide" name="name"> </property>
+			<property value="Rai" name="author"> </property>
+			<property value="2015" name="year"> </property>
+		</bean>
+		<bean id = "book2" class = "beans.Book">
+			<property value="1002" name="code"> </property>
+			<property value="Biggners Learner" name="name"> </property>
+			<property value="Naveen Rai" name="author"> </property>
+			<property value="2016" name="year"> </property>
+		</bean>
+		<bean id = "book3" class = "beans.Book">
+			<property value="1003" name="code"> </property>
+			<property value="Guide" name="name"> </property>
+			<property value="Gupta" name="author"> </property>
+			<property value="2017" name="year"> </property>
+		</bean>
+		<bean id = "book4" class = "beans.Book">
+			<property value="1004" name="code"> </property>
+			<property value="Learner" name="name"> </property>
+			<property value="Naveen Sharma" name="author"> </property>
+			<property value="2018" name="year"> </property>
 		</bean>
 		</beans>
